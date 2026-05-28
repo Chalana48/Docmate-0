@@ -9,17 +9,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Account Actions"
-        android:textSize="20sp"
+        android:text="Doctor Verification Queue"
+        android:textColor="#3B66FF"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review and approve medical profiles to activate their channel network access."
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:layout_marginBottom="32dp"/>
 
     <Button
-        android:id="@+id/btnDisableUser"
+        android:id="@+id/btnApproveDoctor"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
-        android:backgroundTint="#FF1F1F"
-        android:text="Disable User Account"
+        android:layout_height="54dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Approve &amp; Verify Doctor"
         android:textColor="#FFFFFF"
         android:textStyle="bold"/>
 </LinearLayout>

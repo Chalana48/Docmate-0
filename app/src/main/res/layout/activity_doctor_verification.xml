@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Account Actions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnDisableUser"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:backgroundTint="#FF1F1F"
+        android:text="Disable User Account"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -4,14 +4,12 @@ plugins {
 
 android {
     namespace = "com.example.docmate"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 34 // Adjusted to standard stable SDK matching AGP 8.x requirements
 
     defaultConfig {
         applicationId = "com.example.docmate"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,6 +37,11 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // Add Firebase BOM and Firestore dependencies if not already handled by version catalog
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
+    implementation("com.google.firebase:firebase-firestore")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

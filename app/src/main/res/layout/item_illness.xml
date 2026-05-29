@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/illness_card_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp">
+
+    <!-- Illness Name -->
+    <TextView
+        android:id="@+id/tvIllnessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dengue Fever"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Diagnosed -->
+    <TextView
+        android:id="@+id/tvDiagnosed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIAGNOSED: 10 MAR 2015"
+        android:textSize="12sp"
+        android:textColor="#444444"
+        android:letterSpacing="0.04"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Treatment -->
+    <TextView
+        android:id="@+id/tvTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TREATMENT: INHALER"
+        android:textSize="12sp"
+        android:textColor="#444444"
+        android:letterSpacing="0.04"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Doctor -->
+    <TextView
+        android:id="@+id/tvDoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOCTOR: DR. PERERA"
+        android:textSize="12sp"
+        android:textColor="#444444"
+        android:letterSpacing="0.04"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Status + View button row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ongoing"
+            android:textSize="12sp"
+            android:textColor="#555555"
+            android:background="@drawable/status_badge_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginEnd="12dp" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="80dp"
+            android:layout_height="34dp"
+            android:text="View"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_primary_bg"
+            android:padding="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

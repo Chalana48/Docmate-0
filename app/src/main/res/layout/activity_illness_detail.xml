@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A8C4F0">
+
+    <!-- Blue header with illness name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#7BAEE8"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="@drawable/circle_white_bg"
+            android:padding="6dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvIllnessTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asthma"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Details card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#DDEAF8"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvDiagnosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIAGNOSED: 10 MAR 2015"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:letterSpacing="0.05"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvTreatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TREATMENT: INHALER"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:letterSpacing="0.05"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOCTOR: DR. PERERA"
+            android:textSize="14sp"
+            android:textColor="#222222"
+            android:letterSpacing="0.05" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etIllnessName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Illness / Condition Name"
+        android:background="@drawable/input_field_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etDiagnosed"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Diagnosed Date (e.g. 10 Mar 2015)"
+        android:background="@drawable/input_field_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Treatment"
+        android:background="@drawable/input_field_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Doctor Name"
+        android:background="@drawable/input_field_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Status (e.g. Ongoing / Recovered)"
+        android:background="@drawable/input_field_bg"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+</LinearLayout>

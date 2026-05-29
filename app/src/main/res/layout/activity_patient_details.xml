@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A8C4F0">
+
+    <!-- Back button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="@drawable/circle_white_bg"
+            android:padding="6dp" />
+
+    </LinearLayout>
+
+    <!-- Patient Avatar + Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp">
+
+        <ImageView
+            android:id="@+id/ivPatientAvatar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_patient_boy"
+            android:background="@drawable/circle_white_bg"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A2E" />
+
+        <TextView
+            android:id="@+id/tvPatientAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: 34"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <!-- Menu Cards -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <!-- Past Illnesses -->
+        <LinearLayout
+            android:id="@+id/layoutPastIllnesses"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/menu_card_bg"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_heartbeat"
+                android:background="@drawable/icon_circle_blue_bg"
+                android:padding="6dp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAST ILLNESSES"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.06"
+                android:textColor="#1A1A2E" />
+
+        </LinearLayout>
+
+        <!-- Medical Reports -->
+        <LinearLayout
+            android:id="@+id/layoutMedicalReports"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/menu_card_bg"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_heartbeat"
+                android:background="@drawable/icon_circle_blue_bg"
+                android:padding="6dp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEDICAL REPORTS"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.06"
+                android:textColor="#1A1A2E" />
+
+        </LinearLayout>
+
+        <!-- Past Surgeries -->
+        <LinearLayout
+            android:id="@+id/layoutPastSurgeries"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/menu_card_bg"
+            android:padding="14dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_heartbeat"
+                android:background="@drawable/icon_circle_blue_bg"
+                android:padding="6dp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAST SURGERIES"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.06"
+                android:textColor="#1A1A2E" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
